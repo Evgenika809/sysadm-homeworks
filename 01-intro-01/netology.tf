@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_cloudwatch_log_group" "lambda" {
-  name = "/aws/lambda/AvdeevaEvgeniya"
+  name = "/aws/lambda/Evgenika809"
 
   retention_in_days = 1
 }
