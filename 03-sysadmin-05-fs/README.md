@@ -59,7 +59,7 @@ sfdisk -d /dev/sdb | sfdisk -f /dev/sdc
      ```
 ![img_12.png](img_12.png)
 16. Используя pvmove, переместите содержимое PV с RAID0 на RAID1.
-
+![img_13.png](img_13.png)
 17. Сделайте `--fail` на устройство в вашем RAID1 md.
 
 18. Подтвердите выводом `dmesg`, что RAID1 работает в деградированном состоянии.
