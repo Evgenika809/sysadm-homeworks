@@ -61,9 +61,9 @@ sfdisk -d /dev/sdb | sfdisk -f /dev/sdc
 16. Используя pvmove, переместите содержимое PV с RAID0 на RAID1.
 ![img_13.png](img_13.png)
 17. Сделайте `--fail` на устройство в вашем RAID1 md.
-
+![img_14.png](img_14.png)
 18. Подтвердите выводом `dmesg`, что RAID1 работает в деградированном состоянии.
-
+![img_15.png](img_15.png)
 19. Протестируйте целостность файла, несмотря на "сбойный" диск он должен продолжать быть доступен:
 
      ```bash
@@ -71,7 +71,7 @@ sfdisk -d /dev/sdb | sfdisk -f /dev/sdc
      root@vagrant:~# echo $?
      0
      ```
-
+![img_16.png](img_16.png)
 20. Погасите тестовый хост, `vagrant destroy`.
 
  
