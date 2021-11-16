@@ -33,10 +33,9 @@
 sfdisk -d /dev/sdb | sfdisk -f /dev/sdc
 ![img_2.png](img_2.png)
 6. Соберите `mdadm` RAID1 на паре разделов 2 Гб.
-
 ![img_3.png](img_3.png)
 7. Соберите `mdadm` RAID0 на второй паре маленьких разделов.
-
+![img_4.png](img_4.png)
 8. Создайте 2 независимых PV на получившихся md-устройствах.
 
 9. Создайте общую volume-group на этих двух PV.
