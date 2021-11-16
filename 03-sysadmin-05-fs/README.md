@@ -57,7 +57,7 @@ sfdisk -d /dev/sdb | sfdisk -f /dev/sdc
      root@vagrant:~# echo $?
      0
      ```
-
+![img_12.png](img_12.png)
 16. Используя pvmove, переместите содержимое PV с RAID0 на RAID1.
 
 17. Сделайте `--fail` на устройство в вашем RAID1 md.
