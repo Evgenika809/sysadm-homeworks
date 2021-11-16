@@ -45,7 +45,7 @@ sfdisk -d /dev/sdb | sfdisk -f /dev/sdc
 11. Создайте `mkfs.ext4` ФС на получившемся LV.
 ![img_8.png](img_8.png)
 12. Смонтируйте этот раздел в любую директорию, например, `/tmp/new`.
-
+![img_9.png](img_9.png)
 13. Поместите туда тестовый файл, например `wget https://mirror.yandex.ru/ubuntu/ls-lR.gz -O /tmp/new/test.gz`.
 
 14. Прикрепите вывод `lsblk`.
