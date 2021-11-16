@@ -72,7 +72,9 @@ sfdisk -d /dev/sdb | sfdisk -f /dev/sdc
      0
      ```
 ![img_16.png](img_16.png)
+
 20. Погасите тестовый хост, `vagrant destroy`.
+ Грохну тачку, когда получу зачет =)
 
  
  ---
