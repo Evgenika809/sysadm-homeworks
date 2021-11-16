@@ -49,7 +49,7 @@ sfdisk -d /dev/sdb | sfdisk -f /dev/sdc
 13. Поместите туда тестовый файл, например `wget https://mirror.yandex.ru/ubuntu/ls-lR.gz -O /tmp/new/test.gz`.
 ![img_10.png](img_10.png)
 14. Прикрепите вывод `lsblk`.
-
+![img_11.png](img_11.png)
 15. Протестируйте целостность файла:
 
      ```bash
