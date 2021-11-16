@@ -43,7 +43,7 @@ sfdisk -d /dev/sdb | sfdisk -f /dev/sdc
 10. Создайте LV размером 100 Мб, указав его расположение на PV с RAID0.
 ![img_7.png](img_7.png)
 11. Создайте `mkfs.ext4` ФС на получившемся LV.
-
+![img_8.png](img_8.png)
 12. Смонтируйте этот раздел в любую директорию, например, `/tmp/new`.
 
 13. Поместите туда тестовый файл, например `wget https://mirror.yandex.ru/ubuntu/ls-lR.gz -O /tmp/new/test.gz`.
