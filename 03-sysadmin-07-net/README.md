@@ -75,9 +75,15 @@ log_format upstream '$remote_addr - $host [$time_local] "$request" '
 ![img_5.png](img_5.png)
 
 
-### 7. Как проверить ARP таблицу в Linux, Windows? Как очистить ARP кеш полностью? Как из ARP таблицы удалить только один нужный IP?
-
-
+### 7. Как проверить ARP таблицу в Linux, Windows? 
+for Windows: arp -a
+for linux: ip neigh
+### Как очистить ARP кеш полностью?
+for Windows: arp -d -a
+for linux: sudo ip -s -s neigh flush all
+### Как из ARP таблицы удалить только один нужный IP?
+for Windows: arp -d IP-address
+for linux: ip neigh delete 192.168.4.5 dev eth0
 _______
 Задание для самостоятельной отработки (необязательно к выполнению)
 ### 8*. Установите эмулятор EVE-ng.
