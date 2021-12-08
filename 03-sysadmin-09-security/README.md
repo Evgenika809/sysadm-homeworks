@@ -29,9 +29,36 @@ tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 byt
 ___
 ## Задание для самостоятельной отработки (необязательно к выполнению)
 8*. Просканируйте хост scanme.nmap.org. Какие сервисы запущены?
-
+```
+vagrant@vagrant:~$ nmap scanme.nmap.org
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-12-08 19:21 UTC
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.22s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 996 filtered ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+9929/tcp  open  nping-echo
+31337/tcp open  Elite
+```
 9*. Установите и настройте фаервол ufw на web-сервер из задания 3. Откройте доступ снаружи только к портам 22,80,443
- 
+ ```
+ vagrant@vagrant:~$ sudo ufw status verbose
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22                         ALLOW IN    Anywhere
+80                         ALLOW IN    Anywhere
+443                        ALLOW IN    Anywhere
+22 (v6)                    ALLOW IN    Anywhere (v6)
+80 (v6)                    ALLOW IN    Anywhere (v6)
+443 (v6)                   ALLOW IN    Anywhere (v6)
+```
 ---
 
 ## Как сдавать задания
